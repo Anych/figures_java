@@ -15,7 +15,8 @@ class Triangle extends Figure{
 
     @Override
     public double area() {
-        return 0;
+        double area = (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by)) / 2;
+        return Math.abs(area);
     }
 
     @Override
