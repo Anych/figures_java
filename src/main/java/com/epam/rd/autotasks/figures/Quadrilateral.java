@@ -1,5 +1,7 @@
 package com.epam.rd.autotasks.figures;
 
+import java.util.Locale;
+
 class Quadrilateral extends Figure {
     public Quadrilateral(Point firstSide, Point secondSide, Point thirdSide, Point fourthSide) {
         super();
@@ -14,8 +16,8 @@ class Quadrilateral extends Figure {
         by = secondSide.getY();
         cx = thirdSide.getX();
         cy = thirdSide.getY();
-        dx = thirdSide.getX();
-        dy = thirdSide.getY();
+        dx = fourthSide.getX();
+        dy = fourthSide.getY();
     }
     @Override
     public double area() {
@@ -24,7 +26,8 @@ class Quadrilateral extends Figure {
 
     @Override
     public String pointsToString() {
-        return null;
+        return String.format(Locale.CANADA, "(%.1f,%.1f)(%.1f,%.1f)(%.1f,%.1f)(%.1f,%.1f)",
+                ax, ay, bx, by, cx, cy, dx, dy);
     }
 
     @Override
