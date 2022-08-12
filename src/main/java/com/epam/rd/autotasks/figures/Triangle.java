@@ -2,7 +2,7 @@ package com.epam.rd.autotasks.figures;
 
 import java.util.Locale;
 
-class Triangle extends Figure{
+class Triangle extends Figure {
     public Triangle(Point firstSide, Point secondSide, Point thirdSide) {
         super();
         first = firstSide;
