@@ -1,5 +1,5 @@
-package com.epam.rd.autotasks.figures;
-
-class Quadrilateral {
-
-}
+//package com.epam.rd.autotasks.figures;
+//
+//class Quadrilateral extends Figure{
+//
+//}

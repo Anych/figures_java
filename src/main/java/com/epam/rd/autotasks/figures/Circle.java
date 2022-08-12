@@ -1,5 +1,5 @@
-package com.epam.rd.autotasks.figures;
-
-class Circle {
-
-}
+//package com.epam.rd.autotasks.figures;
+//
+//class Circle extends Figure{
+//
+//}
