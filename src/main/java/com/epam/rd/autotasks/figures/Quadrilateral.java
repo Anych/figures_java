@@ -32,7 +32,17 @@ class Quadrilateral extends Figure {
 
     @Override
     public Point leftmostPoint() {
-        return null;
+        Point leftPoint;
+        if (bx <= ax && bx <= cx && bx <= dx) {
+            leftPoint = second;
+        } else if (cx <= ax && cx <= bx && cx <= dx) {
+            leftPoint = third;
+        } else if (dx <= ax && dx <= bx && dx <= cx) {
+            leftPoint = fourth;
+        } else {
+            leftPoint = first;
+        }
+        return leftPoint;
     }
 
     Point first, second, third, fourth;
