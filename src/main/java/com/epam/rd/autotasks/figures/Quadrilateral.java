@@ -21,7 +21,10 @@ class Quadrilateral extends Figure {
     }
     @Override
     public double area() {
-        return 0;
+        double firstTriangle = Math.abs((ax * (by - dy) + bx * (dy - ay) + dx * (ay - by)) / 2);
+        double secondTriangle = Math.abs((dx * (by - cy) + bx * (cy - dy) + cx * (dy - by)) / 2);
+
+        return firstTriangle + secondTriangle;
     }
 
     @Override
